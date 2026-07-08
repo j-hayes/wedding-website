@@ -62,14 +62,13 @@
       padding: 1rem;
       position: relative;
       color: white;
+      min-height: 0;
+      overflow: hidden;
     }
     @media (max-width: 767px) {
       .square {
         font-size: 1.2rem;
         padding: 0.5rem;
-      }
-      .square a {
-        font-size: 0.7rem;
       }
     }
     .square::before {
@@ -88,6 +87,7 @@
       display: inline-flex;
       align-items: center;
       gap: 0.3em;
+      font-size: clamp(0.65rem, 1.5vw, 0.9rem);
     }
     .square a:hover {
       text-decoration: underline;
